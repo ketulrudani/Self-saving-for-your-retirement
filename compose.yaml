@@ -1,0 +1,9 @@
+# Optional: run with docker compose up --build
+# Maps host port 5477 to container port 5477 per challenge requirements.
+services:
+  api:
+    build: .
+    image: blk-hacking-ind-{name-lastname}
+    ports:
+      - "5477:5477"
+    # No external dependencies; single service.
