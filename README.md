@@ -2,6 +2,16 @@
 
 Production-grade API for automated retirement savings via expense rounding. It parses expenses into transactions (ceiling/remanent), validates them, applies temporal rules (q/p/k periods), and computes NPS and Index fund returns with tax benefit and inflation adjustment.
 
+## Tech stack
+
+- **Language:** Python 3.11+
+- **API:** [FastAPI](https://fastapi.tiangolo.com/), [Uvicorn](https://www.uvicorn.org/)
+- **Validation / schemas:** [Pydantic](https://docs.pydantic.dev/)
+- **Package manager:** [uv](https://docs.astral.sh/uv/)
+- **System metrics:** [psutil](https://psutil.readthedocs.io/) (memory, process info)
+- **Tests:** [pytest](https://pytest.org/), [httpx](https://www.python-httpx.org/)
+- **Deployment:** Docker (Python 3.12 slim image), Docker Compose
+
 ## Requirements
 
 - **Python 3.11+**
